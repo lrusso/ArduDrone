@@ -6,9 +6,9 @@ Work in progress of a drone designed in Arduino and using an Android App.
 
 ## About the case
 
-* The STL model is included to print it in any 3D printer.
+* The STL model file is included to print it in any 3D printer.
 
-* The SCENE file can be edited with https://lrusso.github.io/3DObjectMaker/3DObjectMaker.htm.
+* The SCENE model file can be modified using with [3DObjectMaker](https://lrusso.github.io/3DObjectMaker/3DObjectMaker.htm) editor.
 
 ## About the App
 
