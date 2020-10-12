@@ -18,9 +18,9 @@ Work in progress of a drone designed in Arduino and using an Android App.
 
 ## About the Sketch
 
-* The Sketch uses a Bluetooth module HC-05.
+* The Sketch uses a Bluetooth module **HC-05**.
 
-* The pairing code in this kind of modules usually is 1234.
+* The pairing code in this kind of modules usually is **1234**.
 
 ## Current status
 
