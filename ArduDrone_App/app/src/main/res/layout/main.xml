@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:background="@drawable/background">
+	<EditText android:id="@+id/receiverTextbox" android:inputType="text" android:layout_width="wrap_content"  android:layout_height="wrap_content" android:visibility="gone"/>
+	<LinearLayout android:layout_width="match_parent" android:layout_height="fill_parent" android:orientation="horizontal" android:baselineAligned="false">
+
+	    <LinearLayout android:layout_width="0dp" android:layout_height="fill_parent" android:layout_weight=".25" android:gravity="top" android:orientation="vertical">
+			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_gravity="top|center_horizontal" android:paddingTop="-2dip" android:layout_marginTop="-2dip" android:paddingLeft="-20dip" android:layout_marginLeft="-20dip" android:paddingRight="-20dip" android:layout_marginRight="-20dip" android:background="@drawable/rounded_corners">
+			    <TextView android:id="@+id/signalTextboxTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/textSignal" android:textSize="20sp" android:gravity="center_horizontal" android:textColor="#FFFF00" android:paddingTop="10dp"/>
+			    <TextView android:id="@+id/signalTextbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:textSize="20sp" android:gravity="center_horizontal" android:textColor="#000000" android:paddingBottom="10dp"/>
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center_horizontal" android:baselineAligned="false">
+	        <ar.com.lrusso.ardudrone.JoyStick
+				android:id="@+id/joy1"
+				android:layout_width="200dp"
+				android:layout_height="200dp"
+   				android:layout_gravity="bottom|start"/>
+			</LinearLayout>
+		</LinearLayout> 
+
+	    <LinearLayout android:layout_width="0dp" android:layout_height="fill_parent" android:layout_weight=".50" android:gravity="center_horizontal|center_vertical" android:orientation="vertical">
+
+			<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+				<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="49dp" android:paddingBottom="49dp">
+				    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingTop="-2dip" android:layout_marginTop="-2dip" android:background="@drawable/rounded_corners">
+						<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+							<ar.com.lrusso.ardudrone.ImageViewRounded
+        						android:id="@+id/cameraCapture"
+        						android:layout_width="fill_parent"
+								android:layout_height="fill_parent"
+        						android:scaleType="fitXY"
+        						android:padding="2dip"
+        						android:layout_margin="2dip"/>
+							<TextView
+							    android:id="@+id/cameraCaptureStatus"
+        						android:layout_width="wrap_content"
+        						android:layout_height="wrap_content"
+        						android:layout_alignLeft="@+id/cameraCapture"
+        						android:layout_alignTop="@+id/cameraCapture"
+        						android:layout_alignRight="@+id/cameraCapture"
+        						android:layout_alignBottom="@+id/cameraCapture"
+        						android:layout_margin="1dp"
+        						android:gravity="center"
+        						android:text=""
+        						android:textSize="25sp"
+        						android:textColor="#FFFF00" />
+						</RelativeLayout>
+				    </LinearLayout>
+				</RelativeLayout> 
+			    
+    			<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:gravity="center_horizontal">
+					<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="#D8D8D8">
+						<Button android:id="@+id/cameraButton"
+    	    					android:layout_width="wrap_content"
+        						android:layout_height="wrap_content"
+        						android:text="@string/textCamera"
+        						android:drawableTop="@drawable/camera"
+        						android:onClick="myClickHandler"
+        						android:textSize="15sp"
+    							android:layout_marginLeft="-4dip"
+    							android:layout_marginRight="-4dip"
+    							android:layout_marginTop="-4dip"
+    							android:layout_marginBottom="-4dip"/>
+	    			</RelativeLayout> 
+    			</RelativeLayout> 
+			</RelativeLayout>
+	    </LinearLayout>
+
+	    <LinearLayout android:layout_width="0dp" android:layout_height="fill_parent" android:layout_weight=".25" android:gravity="top" android:orientation="vertical">
+			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_gravity="top|center_horizontal" android:paddingTop="-2dip" android:layout_marginTop="-2dip" android:paddingLeft="-20dip" android:layout_marginLeft="-20dip" android:paddingRight="-20dip" android:layout_marginRight="-20dip" android:background="@drawable/rounded_corners">
+			    <TextView android:id="@+id/counterTextboxTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/textFlyTime" android:textSize="20sp" android:gravity="center_horizontal" android:textColor="#FFFF00" android:paddingTop="10dp"/>
+			    <TextView android:id="@+id/counterTextbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:textSize="20sp" android:gravity="center_horizontal" android:textColor="#000000" android:paddingBottom="10dp"/>
+			</LinearLayout>
+			<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center_horizontal" android:baselineAligned="false">
+				<ar.com.lrusso.ardudrone.JoyStick
+					android:id="@+id/joy2"
+					android:layout_width="200dp"
+					android:layout_height="200dp"
+					android:layout_gravity="bottom|end"/>
+			</LinearLayout>
+	    </LinearLayout> 
+	   				
+	</LinearLayout>
+</LinearLayout>
