@@ -14,7 +14,7 @@ Work in progress of a drone designed in Arduino and using an Android App.
 
 * The App connects to the Arduino board using a Bluetooth connection.
 
-* The App sends and receives Strings to handle the board events.
+* The App sends and receives Strings to the board in order to handle the events.
 
 ## About the Sketch
 
