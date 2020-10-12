@@ -1,6 +1,7 @@
 #include <SoftwareSerial.h>
 
 SoftwareSerial bluetooth(10,7);
+
 int     MOTOR_1_PIN = 3;
 int     MOTOR_2_PIN = 11;
 
