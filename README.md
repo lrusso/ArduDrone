@@ -26,13 +26,14 @@ Work in progress of a drone designed in Arduino and using an Android App.
 
 | STATUS  | DETAILS |
 | :------------: |:--------------- |
-| DONE | The Android App connects to the board. |
-| DONE | The Android App controls a propeller. |
+| DONE | Connecting the Android App to the board. |
+| DONE | Controlling a propeller from the Android App. |
+| DONE | Sending Serial data using Bluetooth from the App. |
+| DONE | Receiving Serial data using Bluetooth in the board. |
+| DONE | Executing the remote order to start moving a propeller. |
 | DONE | Designing a 3D case for the drone. |
-| DONE | The Arduino board can receive data from the App. |
-| DONE | The Arduino board can receive the remote order to move a propeller. |
 | PENDING | Designing a more lightweight case. |
 | PENDING | Implementing a more lightweight board. |
 | PENDING | Implementing a code to handle the four propellers. |
 | PENDING | Implementing a VGA Serial camera. |
-| PENDING | The Android App receiving a VGA snapshot from the drone. |
+| PENDING | Receiving a VGA snapshot from the drone. |
